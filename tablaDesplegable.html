@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Tabla Desplegable</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr onclick="this.nextElementSibling.classList.toggle('visible');" class="main-tr">
+            <td>Juan</td>
+            <td>25</td>
+            <td>Madrid</td>
+        </tr>
+        <tr class="details">
+            <td colspan="3"><div>Preso convicto por asesinato</div></td>
+        </tr>
+        <tr onclick="this.nextElementSibling.classList.toggle('visible');" class="main-tr">
+            <td>María</td>
+            <td>30</td>
+            <td>Barcelona</td>
+        </tr>
+        <tr class="details">
+            <td colspan="3"><div>Preso convicto por asesinato</div></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .main-tr {
+        cursor: pointer;
+    }
+
+    .details td {
+        padding: 0;
+        border-top: 0;
+    }
+
+    .details div {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        padding: 0 8px;
+        transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    }
+
+    .details.visible div {
+        max-height: 50px;
+        opacity: 1;
+        padding: 8px;
+    }
+</style>

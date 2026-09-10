@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Tabla Desplegable</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr class="main-tr" onclick="this.querySelector('.details').classList.toggle('visible');">
+            <td>Juan</td>
+            <td class="main-tr">25</td>
+            <td class="main-tr">Madrid</td>
+            <td class="details"><div>Preso convicto por asesinato</div></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .main-tr {
+        cursor: pointer;
+    }
+
+    .details {
+        max-width: 0;
+        padding: 0;
+        border-left: 0;
+        overflow: hidden;
+        transition: max-width 0.4s ease;
+    }
+
+    .details div {
+        max-width: 0;
+        overflow: hidden;
+        opacity: 0;
+        white-space: nowrap;
+        transition: max-width 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    }
+
+    .details.visible {
+        max-width: 250px;
+    }
+
+    .details.visible div {
+        max-width: 250px;
+        opacity: 1;
+        padding: 8px;
+    }
+</style>
