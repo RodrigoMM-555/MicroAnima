@@ -1,0 +1,153 @@
+[
+    {
+        "asignatura": "Acceso a datos",
+        "dia": 1,
+        "hora": 1
+    },
+    {
+        "asignatura": "Acceso a datos",
+        "dia": 2,
+        "hora": 1
+    },
+    {
+        "asignatura": "Acceso a datos",
+        "dia": 2,
+        "hora": 2
+    },
+    {
+        "asignatura": "Acceso a datos",
+        "dia": 5,
+        "hora": 2
+    },
+    {
+        "asignatura": "Programacion multimedia y dispositivos mobiles",
+        "dia": 1,
+        "hora": 2
+    },
+    {
+        "asignatura": "Programacion multimedia y dispositivos mobiles",
+        "dia": 4,
+        "hora": 3
+    },
+    {
+        "asignatura": "Programacion multimedia y dispositivos mobiles",
+        "dia": 4,
+        "hora": 5
+    },
+    {
+        "asignatura": "Programacion multimedia y dispositivos mobiles",
+        "dia": 5,
+        "hora": 6
+    },
+    {
+        "asignatura": "Proyecto intermodular",
+        "dia": 1,
+        "hora": 3
+    },
+    {
+        "asignatura": "Proyecto intermodular",
+        "dia": 1,
+        "hora": 5
+    },
+    {
+        "asignatura": "Proyecto intermodular",
+        "dia": 3,
+        "hora": 7
+    },
+    {
+        "asignatura": "Desarrollo de interfaces",
+        "dia": 1,
+        "hora": 6
+    },
+    {
+        "asignatura": "Desarrollo de interfaces",
+        "dia": 1,
+        "hora": 7
+    },
+    {
+        "asignatura": "Desarrollo de interfaces",
+        "dia": 3,
+        "hora": 5
+    },
+    {
+        "asignatura": "Desarrollo de interfaces",
+        "dia": 3,
+        "hora": 6
+    },
+    {
+        "asignatura": "Desarrollo de interfaces",
+        "dia": 5,
+        "hora": 5
+    },
+    {
+        "asignatura": "IP",
+        "dia": 2,
+        "hora": 3
+    },
+    {
+        "asignatura": "IP",
+        "dia": 5,
+        "hora": 1
+    },
+    {
+        "asignatura": "IP",
+        "dia": 5,
+        "hora": 3
+    },
+    {
+        "asignatura": "Sistemas de gestion empresarial",
+        "dia": 2,
+        "hora": 5
+    },
+    {
+        "asignatura": "Sistemas de gestion empresarial",
+        "dia": 2,
+        "hora": 6
+    },
+    {
+        "asignatura": "Sistemas de gestion empresarial",
+        "dia": 3,
+        "hora": 1
+    },
+    {
+        "asignatura": "Sistemas de gestion empresarial",
+        "dia": 3,
+        "hora": 2
+    },
+    {
+        "asignatura": "Programacion de servicios y procesos",
+        "dia": 2,
+        "hora": 7
+    },
+    {
+        "asignatura": "Programacion de servicios y procesos",
+        "dia": 3,
+        "hora": 3
+    },
+    {
+        "asignatura": "Optativa",
+        "dia": 4,
+        "hora": 6
+    },
+    {
+        "asignatura": "Optativa",
+        "dia": 4,
+        "hora": 7
+    },
+    {
+        "asignatura": "Optativa",
+        "dia": 5,
+        "hora": 7
+    },
+    {
+        "asignatura": "Digitalizacion",
+        "dia": 4,
+        "hora": 1
+    },
+    {
+        "asignatura": "Sostenibilidad",
+        "dia": 4,
+        "hora": 2
+    }
+
+]

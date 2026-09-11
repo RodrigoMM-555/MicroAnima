@@ -1,0 +1,137 @@
+:root {
+	--fondo: #eef3f5;
+	--superficie: #ffffff;
+	--azul-profundo: #17324d;
+	--azul-medio: #2f6f8f;
+	--linea: #d8e2e7;
+	--texto: #243746;
+	--texto-suave: #6b7d87;
+	--acento: #e48a5d;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	padding: clamp(24px, 6vw, 72px) clamp(12px, 4vw, 48px);
+	background: linear-gradient(135deg, #eef3f5 0%, #f9f6f0 100%);
+	color: var(--texto);
+	font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+#horario {
+	width: min(100%, 1100px);
+	margin: 0 auto;
+	overflow-x: auto;
+	padding: 8px;
+	background: rgb(255 255 255 / 72%);
+	border: 1px solid rgb(216 226 231 / 85%);
+	border-radius: 14px;
+	box-shadow: 0 18px 45px rgb(23 50 77 / 13%);
+}
+
+.tabla-horario {
+	width: 100%;
+	min-width: 680px;
+	border-collapse: separate;
+	border-spacing: 0;
+	background: var(--superficie);
+	border: 1px solid var(--linea);
+	border-radius: 9px;
+	overflow: hidden;
+}
+
+.tabla-horario th,
+.tabla-horario td {
+	padding: 14px 16px;
+	border-right: 1px solid var(--linea);
+	border-bottom: 1px solid var(--linea);
+	text-align: center;
+}
+
+.tabla-horario th:last-child,
+.tabla-horario td:last-child {
+	border-right: 0;
+}
+
+.tabla-horario tr:last-child td {
+	border-bottom: 0;
+}
+
+.tabla-horario .cabecera th {
+	position: sticky;
+	top: 0;
+	background: var(--azul-profundo);
+	color: #ffffff;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.tabla-horario .cabecera th:first-child {
+	color: #ffd7bd;
+}
+
+.tabla-horario .transitable td {
+	min-height: 52px;
+	background: var(--superficie);
+	color: var(--texto);
+	font-size: 0.95rem;
+}
+
+.tabla-horario .transitable td:first-child {
+	background: #f3f7f8;
+	color: var(--azul-medio);
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.tabla-horario .transitable:hover td {
+	background: #fff8f3;
+}
+
+.tabla-horario .transitable:hover td:first-child {
+	color: #bd633d;
+}
+
+/* La cabecera aparece desde el principio; las filas se despliegan después.
+   Animamos las celdas porque el transform aplicado a un <tr> solo mueve
+   correctamente su contenido en algunos navegadores, no todo su recuadro. */
+.tabla-horario .transitable > td {
+	opacity: 0;
+	transform: translateY(-18px);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	transition-delay: var(--delay, 0ms);
+}
+
+.tabla-horario .transitable.visible > td {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tabla-horario .transitable > td {
+		transition: none;
+		transform: none;
+	}
+}
+
+@media (max-width: 700px) {
+	#horario {
+		padding: 5px;
+		border-radius: 10px;
+	}
+
+	.tabla-horario th,
+	.tabla-horario td {
+		padding: 12px 10px;
+	}
+
+	.tabla-horario .cabecera th {
+		font-size: 0.7rem;
+	}
+}
